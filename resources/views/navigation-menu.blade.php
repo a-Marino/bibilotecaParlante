@@ -43,11 +43,11 @@
                         <x-slot name="content">
                             <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Manage Account') }}
+                                {{ __('Opciones de perfil') }}
                             </div>
 
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
+                                {{ __('Perfil') }}
                             </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
@@ -65,7 +65,7 @@
                                 <x-jet-dropdown-link href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                    {{ __('Log Out') }}
+                                    {{ __('Cerrar sesión') }}
                                 </x-jet-dropdown-link>
                             </form>
                         </x-slot>
@@ -90,10 +90,10 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+            {{-- <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
-            </x-jet-responsive-nav-link>
-        </div>
+            </x-jet-responsive-nav-link> --}}
+    </div>
 
         @if (Auth::check())
 
@@ -131,7 +131,7 @@
                     <x-jet-responsive-nav-link href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                     this.closest('form').submit();">
-                        {{ __('Log Out') }}
+                        {{ __('Cerrar sesión') }}
                     </x-jet-responsive-nav-link>
                 </form>
 
