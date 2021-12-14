@@ -1,4 +1,7 @@
 <div>
+    <div>
+        <input type="text" wire:model="buscador" placeholder="Buscar">
+   
     <table class="table-auto">
     <thead>
         <tr>
@@ -18,4 +21,6 @@
     </tbody>
     </table>
     {{ $editoriales->links() }}
+
+    </div>
 </div>

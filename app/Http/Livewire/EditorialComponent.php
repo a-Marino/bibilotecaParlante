@@ -16,14 +16,13 @@ class EditorialComponent extends Component
     public $view = 'create';
     public $nombre_editorial;
     public $editorial_id;
+    public $buscador;
 
 
     public function render()
     {
-        
-        return view('livewire.editorial-component',[
-            'editoriales' =>Editorial::orderBy('id','desc')->paginate(10)
-        ]);
+        $editoriales = Editorial::where('nombre_editorial', 'like', '%'.$this->buscador. '%')->paginate(10);
+        return view('livewire.editorial-component',compact('editoriales'));
     }
 
     //Limpiar formulario
@@ -42,7 +41,7 @@ class EditorialComponent extends Component
         ]);
         //actualizo el dato modificado
         $this->edit($editorial->id);
-        //$this->resetCreateForm();
+        $this->resetCreateForm();
 
     }
     public function delete($id){
@@ -72,6 +71,11 @@ class EditorialComponent extends Component
 
     }
 
+    public function buscarEditorial(){
+        $buscador = ' /*'. $this->buscador .'%';
+
+        return Editorial::where('nombre_editorial','like', $buscador)->get();
+    }
 
 }
 
