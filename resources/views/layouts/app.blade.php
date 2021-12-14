@@ -35,7 +35,7 @@
 
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+            @yield('content')
             </main>
 
             <footer class="fixed left-0 bottom-0 bg-red-700 w-full p-8 flex">
