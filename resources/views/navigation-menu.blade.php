@@ -13,7 +13,7 @@
                     {{-- <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-jet-nav-link> --}}
-                    <x-jet-nav-link href="">
+                    <x-jet-nav-link href="/libros">
                         {{ __('Libros') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="">
@@ -22,7 +22,7 @@
                     <x-jet-nav-link href="">
                         {{ __('Generos') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="">
+                    <x-jet-nav-link href="/editoriales">
                         {{ __('Editoriales') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="">
