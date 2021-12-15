@@ -1,6 +1,6 @@
 <h2>Editar Editorial</h2>
 
-@include('livewire.form')
+@include('livewire.editorial.form')
 
 <button wire:click="update">Actualizar</button>
 

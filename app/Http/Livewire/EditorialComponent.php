@@ -22,7 +22,7 @@ class EditorialComponent extends Component
     public function render()
     {
         $editoriales = Editorial::where('nombre_editorial', 'like', '%'.$this->buscador. '%')->paginate(10);
-        return view('livewire.editorial-component',compact('editoriales'));
+        return view('livewire.editorial.editorial-component',compact('editoriales'));
     }
 
     //Limpiar formulario
