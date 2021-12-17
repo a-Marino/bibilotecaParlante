@@ -3,8 +3,8 @@
 @section('content')
 
 <div>
-    <!--llamado al componente -->
-    @livewire("editorial-component")
+@livewire("autor-component")
+
 </div>
 
 @endsection

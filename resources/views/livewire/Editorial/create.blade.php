@@ -1,5 +1,5 @@
 <!--permisos creados en RoleSeeder-->
-@can('botones.nueva-editorial')
+@can('botones.nuevo')
 
 <h2>Nueva Editorial</h2>
 

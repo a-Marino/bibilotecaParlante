@@ -22,4 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::resource('editoriales', 'App\Http\Controllers\EditorialController');
+Route::resource('autores', 'App\Http\Controllers\AutorController');
 

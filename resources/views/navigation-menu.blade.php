@@ -16,7 +16,7 @@
                     <x-jet-nav-link href="/libros">
                         {{ __('Libros') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="">
+                    <x-jet-nav-link href="/autores">
                         {{ __('Autores') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="">

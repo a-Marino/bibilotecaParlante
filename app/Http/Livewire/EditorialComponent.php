@@ -15,7 +15,6 @@ class EditorialComponent extends Component
     //la vista por defecto va a ser create
     public $view = 'create';
     public $nombre_editorial;
-    public $editorial_id;
     public $buscador;
 
 
