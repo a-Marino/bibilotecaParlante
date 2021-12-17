@@ -118,6 +118,9 @@
                 {{ __('Generos') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="">
+                {{ __('Editoriales') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="">
                 {{ __('Cursos') }}
             </x-jet-responsive-nav-link>
     </div>
