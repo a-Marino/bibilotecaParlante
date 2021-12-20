@@ -5,7 +5,7 @@
     <table class="table-auto">
     <thead>
         <tr>
-        <th>Autor</th>
+        <th>Genero</th>
         <!--solo puede ver los botones el administrador -->
         @can('botones.editar-eliminar')
             <th>Editar</th>
@@ -14,18 +14,18 @@
         </tr>
     </thead>
     <tbody>
-        @foreach ($autores as $autor)
+        @foreach ($generos as $genero)
         <tr>
-        <td><a href="">{{$autor->nombre_autor}}</a></td>  
+        <td>{{$genero->nombre_genero}}</td>  
         @can('botones.editar-eliminar')   
-            <td><button wire:click="edit({{$autor->id}})" >Editar</button></td>   
-            <td><button wire:click="delete({{ $autor->id }})"> Eliminar</button></td>
+            <td><button wire:click="edit({{$genero->id}})" >Editar</button></td>   
+            <td><button wire:click="delete({{ $genero->id }})"> Eliminar</button></td>
         @endcan
         </tr>
         @endforeach
     </tbody>
     </table>
-    {{ $autores->links() }}
+    {{ $generos->links() }}
 
     </div>
 </div>

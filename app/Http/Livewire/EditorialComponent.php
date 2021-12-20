@@ -70,12 +70,6 @@ class EditorialComponent extends Component
 
     }
 
-    public function buscarEditorial(){
-        $buscador = ' /*'. $this->buscador .'%';
-
-        return Editorial::where('nombre_editorial','like', $buscador)->get();
-    }
-
 }
 
 

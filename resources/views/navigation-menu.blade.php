@@ -19,7 +19,7 @@
                     <x-jet-nav-link href="/autores">
                         {{ __('Autores') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="">
+                    <x-jet-nav-link href="/generos">
                         {{ __('Generos') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="/editoriales">

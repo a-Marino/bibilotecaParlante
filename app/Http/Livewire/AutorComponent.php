@@ -18,7 +18,6 @@ class AutorComponent extends Component
         $autores = Autor::where('nombre_autor', 'like', '%'.$this->buscador. '%')->paginate(10);
         return view('livewire.autor.autor-component',compact('autores'));
     }
-
     
     //Limpiar formulario
     public function resetCreateForm()
@@ -64,12 +63,6 @@ class AutorComponent extends Component
 
         $this->resetCreateForm();
 
-    }
-
-    public function buscarAutor(){
-        $buscador = ' /*'. $this->buscador .'%';
-
-        return Autor::where('nombre_autor','like', $buscador)->get();
     }
 
 }
