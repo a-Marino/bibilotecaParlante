@@ -16,7 +16,7 @@
     <tbody>
         @foreach ($generos as $genero)
         <tr>
-        <td>{{$genero->nombre_genero}}</td>  
+        <td><a href="">{{$genero->nombre_genero}}</a></td>  
         @can('botones.editar-eliminar')   
             <td><button wire:click="edit({{$genero->id}})" >Editar</button></td>   
             <td><button wire:click="delete({{ $genero->id }})"> Eliminar</button></td>

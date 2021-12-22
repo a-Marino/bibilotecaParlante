@@ -21,6 +21,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/socios', function () {
+    return view('socio.index');
+})->name('socios');
+
 Route::resource('editoriales', 'App\Http\Controllers\EditorialController');
 Route::resource('autores', 'App\Http\Controllers\AutorController');
 Route::resource('generos', 'App\Http\Controllers\GeneroController');

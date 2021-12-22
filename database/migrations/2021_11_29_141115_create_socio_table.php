@@ -19,7 +19,6 @@ class CreateSocioTable extends Migration
             $table->string('nombre_socio');
             $table->string('apellido_socio');
             $table->date('fecha_nac_socio');
-            $table->integer('edad');
             $table->integer('documento');
 
         });

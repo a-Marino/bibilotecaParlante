@@ -25,6 +25,11 @@
                     <x-jet-nav-link href="/editoriales">
                         {{ __('Editoriales') }}
                     </x-jet-nav-link>
+                    @can('botones.socio')
+                        <x-jet-nav-link href="{{ route('socios') }}" :active="request()->routeIs('socio')">
+                            {{ __('Socios') }}
+                        </x-jet-nav-link>
+                    @endcan
                     <x-jet-nav-link href="">
                         {{ __('Cursos') }}
                     </x-jet-nav-link>
@@ -120,6 +125,11 @@
             <x-jet-responsive-nav-link href="">
                 {{ __('Editoriales') }}
             </x-jet-responsive-nav-link>
+            @can('botones.socio')
+                <x-jet-responsive-nav-link href="/socios">
+                    {{ __('Socios') }}
+                </x-jet-responsive-nav-link>
+            @endcan
             <x-jet-responsive-nav-link href="">
                 {{ __('Cursos') }}
             </x-jet-responsive-nav-link>
