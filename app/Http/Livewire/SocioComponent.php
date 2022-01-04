@@ -31,6 +31,7 @@ class SocioComponent extends Component
          $this->nombre_socio = '';
          $this->apellido_socio = '';
          $this->documento='';
+         $this->fecha_nac_socio = '';
          $this->view ='create';
  
      }
@@ -39,7 +40,6 @@ class SocioComponent extends Component
          $this->validate(['nombre_socio'=>'required']);
          $this->validate(['apellido_socio'=>'required']);
          $this->validate(['fecha_nac_socio'=>'required']);
-      //   $this->validate(['edad'=>'required']);
          $this->validate(['documento'=>'required']);
  
          $socio=Socio::create([
@@ -47,7 +47,6 @@ class SocioComponent extends Component
              'apellido_socio'=> $this->apellido_socio,
              'documento' => $this->documento,
              'fecha_nac_socio' => $this->fecha_nac_socio,
-            // 'edad' =>$this->edad
          ]);
          //actualizo el dato modificado
          $this->edit($socio->id);

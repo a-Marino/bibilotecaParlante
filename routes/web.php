@@ -28,5 +28,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/socios', function () {
 Route::resource('editoriales', 'App\Http\Controllers\EditorialController');
 Route::resource('autores', 'App\Http\Controllers\AutorController');
 Route::resource('generos', 'App\Http\Controllers\GeneroController');
+Route::resource('libros', 'App\Http\Controllers\LibroController');
+
 
 

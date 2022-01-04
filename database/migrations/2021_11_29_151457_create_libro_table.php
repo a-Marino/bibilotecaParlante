@@ -17,18 +17,18 @@ class CreateLibroTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('nombreLibro');
-            $table->string('anio');
+            $table->integer('anio');
             $table->integer('stock');
             $table->string('imagen_portada');
 
-            $table->unsignedBigInteger('editorial_id');
-            $table->unsignedBigInteger('autor_id');
-            $table->unsignedBigInteger('genero_id');
+              $table->unsignedBigInteger('editorial_id');
+              $table->unsignedBigInteger('autor_id');
+              $table->unsignedBigInteger('genero_id');
 
             //claves foraneas
-            $table->foreign('editorial_id')->references('id')->on('editorial');
-            $table->foreign('autor_id')->references('id')->on('autor');
-            $table->foreign('genero_id')->references('id')->on('genero');
+           $table->foreign('editorial_id')->references('id')->on('editorial')->onDelete('cascade')->onUpdate('cascade');
+           $table->foreign('autor_id')->references('id')->on('autor');
+           $table->foreign('genero_id')->references('id')->on('genero');
         });
     }
 

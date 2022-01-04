@@ -23,7 +23,6 @@ class GeneroComponent extends Component
     {
         $this->nombre_genero = '';
         $this->view ='create';
-
     }
 
     public function store(){
