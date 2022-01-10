@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div>
+<div class="p-3">
     <!--llamado al componente -->
     @livewire("libro-component")
 </div>

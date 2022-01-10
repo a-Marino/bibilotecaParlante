@@ -1,9 +1,9 @@
 @can('botones.nuevo')
-    <h2>Nuevo Libro</h2>
+    <div>
+        <h2 class="text-2xl font-bold">Nuevo Libro</h2>
 
+        @include('livewire.libro.form')
 
-    @include('livewire.libro.form')
-
-    <button wire:click="store">Guardar</button>
-
+        <x-jet-button wire:click="store" class="mt-5">Guardar</x-jet-button>
+    </div>
 @endcan

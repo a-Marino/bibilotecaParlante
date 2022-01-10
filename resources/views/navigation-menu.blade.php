@@ -113,16 +113,16 @@
             {{-- <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link> --}}
-            <x-jet-responsive-nav-link href="">
+            <x-jet-responsive-nav-link href="/libros">
                 {{ __('Libros') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="">
+            <x-jet-responsive-nav-link href="/autores">
                 {{ __('Autores') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="">
+            <x-jet-responsive-nav-link href="/generos">
                 {{ __('Generos') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="">
+            <x-jet-responsive-nav-link href="/editoriales">
                 {{ __('Editoriales') }}
             </x-jet-responsive-nav-link>
             @can('botones.socio')

@@ -1,8 +1,7 @@
 @can('botones.nuevo')
-<h2>Nuevo Autor</h2>
+    <h2 class="text-2xl font-bold">Nuevo Autor</h2>
 
-@include('livewire.autor.form')
+    @include('livewire.autor.form')
 
-<button wire:click="store">Guardar</button>
-
+    <x-jet-button wire:click="store" class="mt-5">Guardar</x-jet-button>
 @endcan

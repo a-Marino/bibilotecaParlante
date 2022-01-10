@@ -18,7 +18,7 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased min-h-screen">
         <x-jet-banner />
 
         <div class="min-h-screen bg-gray-100">
@@ -38,22 +38,23 @@
             @yield('content')
             </main>
 
-            <footer class="fixed left-0 bottom-0 bg-red-700 w-full p-8 flex">
-                <div class="flex flex-col">
-                    <div>
-                        <img src="{{ asset('assets/images/logo-blanco.png') }}" alt="Biblioteca Parlante" class="h-14">
-                    </div>
-                    <div class="text-sm text-gray-300 font-medium flex flex-col">
-                        <span>bibliotecaparlante@gmail.com</span>
-                        <span>Direccion</span>
-                        <span>Telefono</span>
-                    </div>
-                </div>
-            </footer>
         </div>
 
         @stack('modals')
 
         @livewireScripts
+
+        <footer class="bg-red-700 w-full p-8 flex">
+            <div class="flex flex-col">
+                <div>
+                    <img src="{{ asset('assets/images/logo-blanco.png') }}" alt="Biblioteca Parlante" class="h-14">
+                </div>
+                <div class="text-sm text-gray-300 font-medium flex flex-col">
+                    <span>bibliotecaparlante@gmail.com</span>
+                    <span>Direccion</span>
+                    <span>Telefono</span>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
