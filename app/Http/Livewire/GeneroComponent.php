@@ -10,6 +10,7 @@ class GeneroComponent extends Component
 {
     public $view = 'create';
     public $nombre_genero;
+    public $genero_id;
     public $buscador;
 
     public function render()

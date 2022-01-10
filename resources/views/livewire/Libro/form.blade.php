@@ -35,9 +35,7 @@
 
     <input type="file" wire:model='imagen_portada'>
 
-    @if($imagen_portada)
-        <img src=" {{$imagen_portada->temporaryurl()}}" alt="" width='100px'>
-    @endif
+
 
     @error("nombre_libro") <span>{{$message}}</span> @enderror
 </div>
