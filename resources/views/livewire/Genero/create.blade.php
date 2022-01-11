@@ -1,9 +1,9 @@
 @can('botones.nuevo')
-    <h2>Nuevo Genero</h2>
+    <div>
+        <h2 class="text-2xl font-bold">Nuevo Genero</h2>
+        
+        @include('livewire.genero.form')
 
-
-    @include('livewire.genero.form')
-
-    <button wire:click="store">Guardar</button>
-
+        <x-jet-button wire:click="store" class="mt-5">Guardar</x-jet-button>
+    </div>
 @endcan

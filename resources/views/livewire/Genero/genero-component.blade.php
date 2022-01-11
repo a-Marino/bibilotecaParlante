@@ -1,11 +1,8 @@
-<div>
-
-<div class="">
+<div class="p-3"> 
+   <div>
       @include("livewire.genero.$view")
   </div>
-
-  <div class="">
+  <div>
      @include("livewire.genero.table")
   </div>
-
 </div>

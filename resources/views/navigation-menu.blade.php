@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center self-start">
-                    <img src="{{ asset('assets/images/logo-blanco.png') }}" alt="Biblioteca Parlante" class="h-16">
+                    <a href="/"><img src="{{ asset('assets/images/logo-blanco.png') }}" alt="Biblioteca Parlante" class="h-16"></a>
                 </div>
 
                 <!-- Navigation Links -->

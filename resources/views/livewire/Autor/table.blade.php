@@ -1,13 +1,14 @@
 <div>
     <div>
-        <x-jet-input type="text" wire:model="buscador" placeholder="Buscar" class="mt-5 w-1/2"/>
+        <h2 class="mt-5 mb-2 text-xl font-semibold">Buscar autores:</h2>
+        <x-jet-input type="text" wire:model="buscador" placeholder="Autor" class="w-1/2"/>
 
         <h3 class="text-3xl font-bold mt-5">Autores:</h3>
         <div class="flex flex-col space-y-5 mt-5">
             @foreach($autores as $autor)
             <div class="flex flex-row items-center space-x-5 px-5">
                     <div>
-                        <a href="" class="text-lg font-semibold">{{$autor->nombre_autor}}</a>
+                        <a href="" class="text-lg font-semibold hover:text-red-600">{{$autor->nombre_autor}}</a>
                     </div>
                     
                     @can('botones.editar-eliminar')

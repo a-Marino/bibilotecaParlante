@@ -3,5 +3,5 @@
 
     @include('livewire.autor.form')
 
-    <x-jet-button wire:click="store" class="mt-5">Guardar</x-jet-button>
+    <x-jet-button wire:click="store" class="mt-5 mb-5">Guardar</x-jet-button>
 @endcan

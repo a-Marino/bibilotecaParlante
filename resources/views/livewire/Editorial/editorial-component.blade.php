@@ -1,11 +1,8 @@
-<div>
-
-  <div class="">
+<div class="p-3">
+    <div>
         @include("livewire.editorial.$view")
     </div>
-
-    <div class="">
+    <div>
         @include('livewire.editorial.table')
     </div>
-
 </div>

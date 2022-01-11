@@ -1,4 +1,5 @@
-<x-app-layout>
+@extends('layouts.app')
+@section('content')
     <div>
         {{-- BIENVENIDOS --}}
         <div class="bg-red-100 py-8 flex flex-col justify-center items-center space-y-3">
@@ -10,14 +11,21 @@
             </div>
         </div>
         {{-- LIBROS --}}
-        <div class="flex mt-8">
+        <div class="flex flex-col mt-8">
             <div class="flex flex-col">
-                <span class="ml-20 uppercase font-black text-lg">Libros</span>
-                <div class="bg-red-700 h-2"></div>
+                <span class="ml-20 uppercase font-black text-lg">Ultimos libros</span>
+                <div class="bg-red-700 h-2 w-60"></div>
             </div>
-            <div class="flex flex-col md:flex-row">
-                
+            <div class="flex flex-col md:flex-row space-x-0 md:space-x-20 mt-5 md:ml-20 md:space-y-0 space-y-10 p-7 md:p-0">
+                @foreach($libros->take(4)  as $libro)
+                    <div class="flex flex-col">
+                        <img src="/storage/{{$libro->imagen_portada}}" class="w-50" alt="portada de libro">
+                        <div>
+                            <h5 class="text-xl font-semibold">{{$libro->nombreLibro}}</h5>
+                        </div>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
-</x-app-layout>
+@endsection
