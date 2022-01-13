@@ -1,8 +1,27 @@
-<div>
+<div class="mt-5">
     <div>
-        <input type="text" wire:model="buscador" placeholder="Buscar">
+        <h2 class="mb-2 text-xl font-semibold">Buscar socios:</h2>
+        <x-jet-input type="text" wire:model="buscador" placeholder="Socio" class="w-1/2"/>
+
+        <h3 class="text-3xl font-bold mt-5">Socios:</h3>
+        <div class="flex flex-col space-y-5 mt-5">
+            @foreach($socios as $socio)
+            <div class="flex flex-col md:flex-row items-center space-x-5 px-5">
+                    <div>
+                        <span class="text-lg font-semibold hover:text-red-600">{{$socio->nombre_socio}} {{$socio->apellido_socio}} - DNI: {{$socio->documento}} - Edad: {{$socio->edad}}</span>
+                    </div>
+                            
+                    @can('botones.editar-eliminar')
+                        <div class="mt-2 self-start md:mt-0">
+                            <button wire:click="edit({{$socio->id}})" class="inline-flex items-center px-4 py-2 bg-white border-2 border-red-600 rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-red-600 active:bg-red-800 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition">Editar</button>
+                            <x-jet-danger-button wire:click="delete({{$socio->id}})">Eliminar</x-jet-danger-button>
+                        </div>
+                    @endcan
+                </div>
+            @endforeach
+        </div>
    
-    <table class="table-auto">
+    {{-- <table class="table-auto">
     <thead>
         <tr>
         <th>Nombre</th>
@@ -29,7 +48,7 @@
         </tr>
         @endforeach
     </tbody>
-    </table>
+    </table> --}}
 
     </div>
 </div>

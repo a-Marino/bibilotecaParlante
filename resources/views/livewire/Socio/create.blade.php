@@ -1,6 +1,7 @@
-<h2>Nuevo Socio</h2>
+<div>
+    <h2 class="text-2xl font-bold">Nuevo Socio</h2>
 
+    @include('livewire.socio.form')
 
-@include('livewire.socio.form')
-
-<button wire:click="store">Guardar</button>
+    <x-jet-button wire:click="store" class="mt-5">Guardar</x-jet-button>
+</div>

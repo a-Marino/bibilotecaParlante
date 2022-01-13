@@ -6,7 +6,7 @@
         <h3 class="text-3xl font-bold mt-5">Autores:</h3>
         <div class="flex flex-col space-y-5 mt-5">
             @foreach($autores as $autor)
-            <div class="flex flex-row items-center space-x-5 px-5">
+            <div class="flex flex-col md:flex-row items-center space-x-5 px-5">
                     <div>
                         <a href="" class="text-lg font-semibold hover:text-red-600">{{$autor->nombre_autor}}</a>
                     </div>

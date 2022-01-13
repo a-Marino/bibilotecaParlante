@@ -1,10 +1,8 @@
-<div>
-   
-<div class="">
+<div class="p-3">
+   <div>
       @include("livewire.socio.$view")
   </div>
-
-  <div class="">
+  <div>
      @include("livewire.socio.table")
   </div>
 </div>
