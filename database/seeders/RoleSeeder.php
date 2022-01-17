@@ -19,9 +19,10 @@ class RoleSeeder extends Seeder
        $roleAdmin= Role::create(['name'=>'admin']);
 
        //crear los permisos 
-       Permission::create(['name'=>'botones.editar-eliminar'])->syncRoles([$roleAdmin]);;
-       Permission::create(['name'=>'botones.nuevo'])->syncRoles([$roleAdmin]);;
-       Permission::create(['name'=>'botones.socio'])->syncRoles([$roleAdmin]);;
+       Permission::create(['name'=>'botones.editar-eliminar'])->syncRoles([$roleAdmin]);
+       Permission::create(['name'=>'botones.nuevo'])->syncRoles([$roleAdmin]);
+       Permission::create(['name'=>'botones.nav'])->syncRoles([$roleAdmin]);
+
 
 
 

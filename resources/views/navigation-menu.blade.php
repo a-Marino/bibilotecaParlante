@@ -17,15 +17,21 @@
                         {{ __('Libros') }}
                     </x-jet-nav-link>
                     <x-jet-nav-link href="/autores">
-                        {{ __('Autores') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="/generos">
-                        {{ __('Generos') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="/editoriales">
-                        {{ __('Editoriales') }}
-                    </x-jet-nav-link>
-                    @can('botones.socio')
+                    @can('botones.nav')
+                            {{ __('Autores') }}
+                        </x-jet-nav-link>
+                    @endcan
+                    @can('botones.nav')
+                        <x-jet-nav-link href="/generos">
+                            {{ __('Generos') }}
+                        </x-jet-nav-link>
+                    @endcan
+                    @can('botones.nav')
+                        <x-jet-nav-link href="/editoriales">
+                            {{ __('Editoriales') }}
+                        </x-jet-nav-link>
+                    @endcan
+                    @can('botones.nav')
                         <x-jet-nav-link href="{{ route('socios') }}" :active="request()->routeIs('socio')">
                             {{ __('Socios') }}
                         </x-jet-nav-link>
@@ -116,16 +122,22 @@
             <x-jet-responsive-nav-link href="/libros">
                 {{ __('Libros') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="/autores">
-                {{ __('Autores') }}
-            </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="/generos">
-                {{ __('Generos') }}
-            </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="/editoriales">
-                {{ __('Editoriales') }}
-            </x-jet-responsive-nav-link>
-            @can('botones.socio')
+            @can('botones.nav')
+                <x-jet-responsive-nav-link href="/autores">
+                    {{ __('Autores') }}
+                </x-jet-responsive-nav-link>
+            @endcan
+            @can('botones.nav')
+                <x-jet-responsive-nav-link href="/generos">
+                    {{ __('Generos') }}
+                </x-jet-responsive-nav-link>
+            @endcan
+            @can('botones.nav')
+                <x-jet-responsive-nav-link href="/editoriales">
+                    {{ __('Editoriales') }}
+                </x-jet-responsive-nav-link>
+            @endcan
+            @can('botones.nav')
                 <x-jet-responsive-nav-link href="/socios">
                     {{ __('Socios') }}
                 </x-jet-responsive-nav-link>
