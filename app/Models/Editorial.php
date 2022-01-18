@@ -10,4 +10,9 @@ class Editorial extends Model
     use HasFactory;
     protected $fillable = ['nombre_editorial'];
     protected $table = 'editorial';
+
+    //una editorial uno o muchos libros
+    public function libro(){
+        return $this->hasMany('\App\Models\Libro');
+    }
 }

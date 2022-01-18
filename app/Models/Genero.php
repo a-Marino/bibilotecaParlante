@@ -11,4 +11,9 @@ class Genero extends Model
 
     protected $fillable = ['nombre_genero'];
     protected $table = 'genero';
+
+    //un genero uno o muchos libros
+    public function libro(){
+        return $this->hasMany('App/Models/Libro');
+    }
 }

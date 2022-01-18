@@ -10,4 +10,9 @@ class Autor extends Model
     use HasFactory;
     protected $fillable = ['nombre_autor'];
     protected $table = 'autor';
+
+    //un autor uno o muchos libros
+    public function libro(){
+        return $this->hasMany('App/Models/Libro');
+    }
 }
