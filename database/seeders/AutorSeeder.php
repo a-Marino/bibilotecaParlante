@@ -1,0 +1,29 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use App\Models\Autor;
+
+class AutorSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Autor::create([
+            'nombre_autor' => 'Ricardo Garcia' 
+        ]);
+
+        Autor::create([
+            'nombre_autor' => 'Gabriel Garcia Marquez' 
+        ]);
+
+        Autor::create([
+            'nombre_autor' => 'Pepe' 
+        ]);
+    }
+}

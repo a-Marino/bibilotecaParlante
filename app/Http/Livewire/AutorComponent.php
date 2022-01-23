@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\Autor;
+use App\Models\Libro;
 use Livewire\withPagination;
 
 class AutorComponent extends Component
@@ -52,6 +53,7 @@ class AutorComponent extends Component
 
         $this->view ='edit';
     }
+
 
     public function update(){
         $this->validate(['nombre_autor'=>'required']);

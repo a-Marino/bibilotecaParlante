@@ -2,17 +2,17 @@
     <div class="flex md:space-x-4 mt-3 flex-col md:flex-row space-y-3 md:space-y-0">
         <div class="flex flex-col">
             <label>Nombre</label>
-            <x-jet-input type="text" class="rounded-md" placeholder="Nombre" wire:model="nombre_libro"/>
+            <x-jet-input type="text" class="rounded-md" placeholder="Nombre" wire:model="nombre_libro" required/>
         </div>
 
         <div class="flex flex-col">
             <label>Año</label>
-            <x-jet-input type="number" class="rounded-md" placeholder="2020" wire:model="anio"/>
+            <x-jet-input type="number" class="rounded-md" placeholder="2020" wire:model="anio" required/>
         </div>
 
         <div class="flex flex-col">
             <label>Stock</label>
-            <x-jet-input type="number" class="rounded-md" placeholder="1" wire:model="stock"/>
+            <x-jet-input type="number" class="rounded-md" placeholder="1" wire:model="stock" required/>
         </div>
     </div>
 

@@ -8,7 +8,7 @@
             @foreach($autores as $autor)
             <div class="flex flex-col md:flex-row items-center space-x-5 px-5">
                     <div>
-                        <a href="" class="text-lg font-semibold hover:text-red-600">{{$autor->nombre_autor}}</a>
+                        <a href="autores/{{$autor->id}}" class="text-lg font-semibold hover:text-red-600">{{$autor->nombre_autor}}</a>
                     </div>
                     
                     @can('botones.editar-eliminar')

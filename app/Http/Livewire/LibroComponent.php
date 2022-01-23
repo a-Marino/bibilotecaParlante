@@ -25,6 +25,7 @@ class LibroComponent extends Component
     public $autor_id;
     public $imagen_portada;
     public $buscador;
+    public $confirmingLibroDeletion = false;
 
     public function render()
     {
@@ -76,7 +77,7 @@ class LibroComponent extends Component
     }
 
     public function delete($id){
-       $libro= Libro::find($id);
+        $libro= Libro::find($id);
 
         Storage::disk('public')->delete('files',$libro->imagen_portada);
 
@@ -124,5 +125,9 @@ class LibroComponent extends Component
         ]);
 
         $this->resetCreateForm();
+    }
+
+    public function confirmLibroDeletion() {
+        $this->confirmingLibroDeletion = true;
     }
 }

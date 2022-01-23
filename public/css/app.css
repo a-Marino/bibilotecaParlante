@@ -1105,9 +1105,16 @@ select {
 .col-span-6 {
 	grid-column: span 6 / span 6;
 }
+.m-2 {
+	margin: 0.5rem;
+}
 .mx-auto {
 	margin-left: auto;
 	margin-right: auto;
+}
+.my-2 {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 .ml-3 {
 	margin-left: 0.75rem;
@@ -1241,6 +1248,15 @@ select {
 .h-2 {
 	height: 0.5rem;
 }
+.h-52 {
+	height: 13rem;
+}
+.h-64 {
+	height: 16rem;
+}
+.h-72 {
+	height: 18rem;
+}
 .min-h-screen {
 	min-height: 100vh;
 }
@@ -1291,6 +1307,9 @@ select {
 }
 .w-44 {
 	width: 11rem;
+}
+.w-52 {
+	width: 13rem;
 }
 .min-w-0 {
 	min-width: 0px;
@@ -1379,9 +1398,6 @@ select {
 .flex-wrap {
 	flex-wrap: wrap;
 }
-.items-start {
-	align-items: flex-start;
-}
 .items-center {
 	align-items: center;
 }
@@ -1443,16 +1459,8 @@ select {
 	margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
-.space-x-2 > :not([hidden]) ~ :not([hidden]) {
-	--tw-space-x-reverse: 0;
-	margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-	margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
 .self-start {
 	align-self: flex-start;
-}
-.justify-self-start {
-	justify-self: start;
 }
 .overflow-hidden {
 	overflow: hidden;
@@ -2395,10 +2403,6 @@ select {
 		flex-direction: row;
 	}
 
-	.md\:items-center {
-		align-items: center;
-	}
-
 	.md\:gap-6 {
 		gap: 1.5rem;
 	}
@@ -2415,16 +2419,16 @@ select {
 		margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 
-	.md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
-		--tw-space-x-reverse: 0;
-		margin-right: calc(5rem * var(--tw-space-x-reverse));
-		margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
-	}
-
 	.md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
 		--tw-space-x-reverse: 0;
 		margin-right: calc(0.5rem * var(--tw-space-x-reverse));
 		margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+	}
+
+	.md\:space-x-20 > :not([hidden]) ~ :not([hidden]) {
+		--tw-space-x-reverse: 0;
+		margin-right: calc(5rem * var(--tw-space-x-reverse));
+		margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
 	}
 
 	.md\:border-t-0 {

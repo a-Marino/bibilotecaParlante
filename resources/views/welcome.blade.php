@@ -19,7 +19,7 @@
             <div class="flex flex-col md:flex-row space-x-0 md:space-x-20 mt-5 md:ml-20 md:space-y-0 space-y-10 p-7 md:p-0">
                  @foreach($libros->take(4)  as $libro)
                     <div class="flex flex-col">
-                        <img src="/storage/{{$libro->imagen_portada}}" class="w-50" alt="portada de libro">
+                        <img src="/storage/{{$libro->imagen_portada}}" class="h-72" alt="portada de libro">
                         <div>
                             <h5 class="text-xl font-semibold">{{$libro->nombreLibro}}</h5>
                         </div>
