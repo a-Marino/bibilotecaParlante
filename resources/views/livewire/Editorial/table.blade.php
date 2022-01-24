@@ -8,7 +8,7 @@
             @foreach($editoriales as $editorial)
             <div class="flex flex-row items-center space-x-5 px-5">
                     <div>
-                        <a href="" class="text-lg font-semibold hover:text-red-600">{{$editorial->nombre_editorial}}</a>
+                        <a href="editoriales/{{$editorial->id}}" class="text-lg font-semibold hover:text-red-600">{{$editorial->nombre_editorial}}</a>
                     </div>
                             
                     @can('botones.editar-eliminar')

@@ -35,6 +35,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/editoriales', function ()
 
 Route::resource('libros', 'App\Http\Controllers\LibroController');
 Route::resource('autores', 'App\Http\Controllers\AutorController');
+Route::resource('generos', 'App\Http\Controllers\GeneroController');
+Route::resource('editoriales', 'App\Http\Controllers\EditorialController');
 
 
 

@@ -8,7 +8,7 @@
             @foreach($generos as $genero)
             <div class="flex flex-row items-center space-x-5 px-5">
                     <div>
-                        <a href="" class="text-lg font-semibold hover:text-red-600">{{$genero->nombre_genero}}</a>
+                        <a href="generos/{{$genero->id}}" class="text-lg font-semibold hover:text-red-600">{{$genero->nombre_genero}}</a>
                     </div>
                         
                     @can('botones.editar-eliminar')
