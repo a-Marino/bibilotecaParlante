@@ -21,17 +21,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/socios', function () {
     return view('socio.index');
 })->name('socios');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/autores', function () {
-    return view('autor.index');
-})->name('autores');
+Route::middleware(['auth:sanctum', 'verified'])->get('/libroPrestado', function () {
+    return view('libroPrestado.index');
+})->name('libroPrestado');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/generos', function () {
-    return view('genero.index');
-})->name('generos');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/editoriales', function () {
-    return view('editorial.index');
-})->name('editoriales');
 
 Route::resource('libros', 'App\Http\Controllers\LibroController');
 Route::resource('autores', 'App\Http\Controllers\AutorController');

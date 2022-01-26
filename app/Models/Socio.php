@@ -11,4 +11,9 @@ class Socio extends Model
 
     protected $fillable = ['nombre_socio', 'apellido_socio','fecha_nac_socio','edad','documento'];
     protected $table = 'socio';
+
+
+    public function libroPrestado(){
+        return $this->belongsTo('\App\Models\LibroPrestado');
+    }
 }
