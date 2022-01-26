@@ -21,9 +21,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/socios', function () {
     return view('socio.index');
 })->name('socios');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/libroPrestado', function () {
+Route::middleware(['auth:sanctum', 'verified'])->get('/librosPrestados', function () {
     return view('libroPrestado.index');
-})->name('libroPrestado');
+})->name('librosPrestados');
 
 
 

@@ -36,9 +36,12 @@
                             {{ __('Socios') }}
                         </x-jet-nav-link>
                     @endcan
-                    <x-jet-nav-link href="">
-                        {{ __('Cursos') }}
+                    @can('botones.nav')
+                    <x-jet-nav-link href="/librosPrestados">
+                        {{ __('Libros Prestados') }}
                     </x-jet-nav-link>
+                    @endcan
+
                 </div>
             </div>
 
@@ -142,9 +145,11 @@
                     {{ __('Socios') }}
                 </x-jet-responsive-nav-link>
             @endcan
-            <x-jet-responsive-nav-link href="">
-                {{ __('Cursos') }}
+            @can('botones.nav')
+            <x-jet-responsive-nav-link href="/librosPrestados">
+                {{ __('Libros Prestados') }}
             </x-jet-responsive-nav-link>
+            @endcan
     </div>
 
         @if (Auth::check())

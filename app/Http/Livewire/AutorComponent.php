@@ -6,6 +6,8 @@ use Livewire\Component;
 use App\Models\Autor;
 use App\Models\Libro;
 use Livewire\withPagination;
+use Illuminate\Support\Facades\DB;
+
 
 class AutorComponent extends Component
 {
@@ -67,4 +69,5 @@ class AutorComponent extends Component
 
     }
 
+    
 }
