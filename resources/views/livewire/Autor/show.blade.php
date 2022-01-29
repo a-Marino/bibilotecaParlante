@@ -3,19 +3,19 @@
 @section('content')
 
 <div class="mt-5">
-    <h2 class="mb-2 text-xl font-semibold text-center">Libros Escritos por {{$autor->nombre_autor}}</h2>
+    <h2 class="mb-2 text-xl font-semibold text-center">Libros Escritos por <span class="text-red-600">{{$autor->nombre_autor}}</span></h2>
     <div class="md:grid grid-cols-4 flex flex-col items-center space-y-5 md:space-y-0">
         @foreach($libros as $libro)
-            <div style="width: 18rem;">
+            <div style="width: 18rem;" class="p-5">
                 <div>
                     <img src="/storage/{{$libro->imagen_portada}}" class="h-72 my-2" alt="portada de libro">
                     <div class="card-body">
                             <h5 class="text-xl font-semibold">{{$libro->nombreLibro}}</h5>
-                            <h5 class="text-gray-600 text-red-600 font-bold">Autor: {{$libro->autor->nombre_autor}}</h5>
-                            <h5 class="text-gray-600 text-red-600 font-bold">Editorial: {{$libro->editorial->nombre_editorial}}</h5>
-                            <h5 class="text-gray-600 text-red-600 font-bold">Genero: {{$libro->genero->nombre_genero}}</h5>
+                            <a href="/editoriales/{{$libro->editorial->id}}" class="text-gray-600 font-bold">Editorial: <span class="text-red-600">{{$libro->editorial->nombre_editorial}}</span></a>
+                            <br>
+                            <a href="/generos/{{$libro->genero->id}}" class="text-gray-600  font-bold">Genero: <span class="text-red-600">{{$libro->genero->nombre_genero}}</span></a>
                             @can('botones.editar-eliminar')
-                             <h5 class="self-end  text-gray-600 text-sm text-red-600 font-bold">Cantidad: <span class="text-red-600 font-bold">{{$libro->stock}}</span></h5>
+                             <h5 class="self-end  text-gray-600 text-sm  font-bold">Cantidad: <span class="text-red-600 font-bold">{{$libro->stock}}</span></h5>
                             @endcan
                             @can('botones.editar-eliminar')
                             <div class="mt-2"> 

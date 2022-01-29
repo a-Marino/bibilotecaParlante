@@ -4,6 +4,5 @@
     </div>
     <div>
         @include("livewire.libroPrestado.table")
-    </div>
-    
+    </div> 
 </div>
