@@ -7,6 +7,7 @@ use App\Models\Libro;
 use App\models\Editorial;
 use App\models\Genero;
 use App\models\Autor;
+use App\models\LibroPrestado;
 use Livewire\WithFileUploads;
 use Livewire\withPagination;
 use Illuminate\Support\Facades\Storage; //eliminar imagenes del servidor

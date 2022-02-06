@@ -1,3 +1,5 @@
+<div class="container mx-auto">
+
 <div class="mt-5">
     <h2 class="mb-2 text-xl font-semibold">Buscar libros:</h2>
     <input type="text" wire:model='buscador' placeholder="Titulo" class="md:w-1/2 rounded-md border-gray-300 focus:border-red-300 focus:ring focus:ring-red-200 focus:ring-opacity-50 shadow-sm mb-5">
@@ -29,3 +31,4 @@
     </div>
     
    
+    </div>

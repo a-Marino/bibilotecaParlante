@@ -52,7 +52,6 @@ class AutorComponent extends Component
         $this->nombre_autor = $autor->nombre_autor;
         $this->autor_id = $autor->id;
 
-
         $this->view ='edit';
     }
 

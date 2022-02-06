@@ -19,6 +19,12 @@
             <td class="p-3 text-gray-700 whitespace-nowrap">{{$libroPrestado->nombreLibro}}</td>
             <td class="p-3 text-gray-700 whitespace-nowrap">{{$libroPrestado->fecha_salida}}</td>
             <td class="p-3 text-gray-700 whitespace-nowrap">{{$libroPrestado->fecha_devolucion}}</td>
+            <td class="p-3 text-gray-700 whitespace-nowrap"> 
+                <div>
+                    <button wire:click="edit({{$libroPrestado->id}})" class="inline-flex items-center px-4 py-2 bg-white border-2 border-red-600 rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-red-600 active:bg-red-800 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition">Editar</button>
+                    <x-jet-danger-button wire:click="delete({{$libroPrestado->id}})">Eliminar</x-jet-danger-button>
+                </div>
+            </td>
           </tr>
         @endforeach
       </tbody>
