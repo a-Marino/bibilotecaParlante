@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Editorial;
 use Illuminate\Database\Seeder;
 
 class EditorialSeeder extends Seeder
@@ -13,6 +14,8 @@ class EditorialSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Editorial::create([
+            'nombre_editorial' => 'Editorial 1' 
+        ]);
     }
 }

@@ -15,7 +15,8 @@ mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
         require('tailwindcss'),
-    ]);
+    ])
+    .js('resources/js/btnEditar.js', 'public/js');
 
 if (mix.inProduction()) {
     mix.version();

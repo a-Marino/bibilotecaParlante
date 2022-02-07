@@ -13,7 +13,7 @@
                             
                     @can('botones.editar-eliminar')
                         <div class="mt-2 self-start md:mt-0">
-                            <button wire:click="edit({{$socio->id}})" class="inline-flex items-center px-4 py-2 bg-white border-2 border-red-600 rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-red-600 active:bg-red-800 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition">Editar</button>
+                            <button wire:click="edit({{$socio->id}})" class="inline-flex items-center px-4 py-2 bg-white border-2 border-red-600 rounded-md font-semibold text-xs text-black uppercase tracking-widest hover:bg-red-600 active:bg-red-800 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-300 disabled:opacity-25 transition" onclick="window.scrollTo(0, 0);">Editar</button>
                             <x-jet-danger-button wire:click="delete({{$socio->id}})">Eliminar</x-jet-danger-button>
                         </div>
                     @endcan

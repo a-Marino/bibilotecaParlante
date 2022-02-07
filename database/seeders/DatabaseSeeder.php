@@ -18,6 +18,9 @@ class DatabaseSeeder extends Seeder
         $this->call(RoleSeeder::class);
         $this->call(UserSeeder::class);
         $this->call(AutorSeeder::class);
+        $this->call(GeneroSeeder::class);
+        $this->call(EditorialSeeder::class);
+        
 
         //carpeta para imagenes de los libros
         Storage::deleteDirectory('portadas');

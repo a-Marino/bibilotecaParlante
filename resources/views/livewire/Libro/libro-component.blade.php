@@ -1,4 +1,4 @@
-<div>
+<div class="container mx-auto">
     <div>
         @include("livewire.libro.$view")
     </div>

@@ -17,6 +17,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/btnEditar.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased min-h-screen">
         <x-jet-banner />
@@ -49,10 +50,10 @@
                 <div>
                     <img src="{{ asset('assets/images/logo-blanco.png') }}" alt="Biblioteca Parlante" class="h-14">
                 </div>
-                <div class="text-sm text-gray-300 font-medium flex flex-col">
-                    <span>bibliotecaparlante@gmail.com</span>
-                    <span>Direccion</span>
-                    <span>Telefono</span>
+                <div class="text-sm font-light text-gray-300  flex flex-col">
+                    <span >bibliotecaparlantesuarez@hotmail.com</span>
+                    <span>Harriot y Moreno, Coronel Suarez, Argentina, 7540</span>
+                    <span>2926517997</span>
                 </div>
             </div>
         </footer>

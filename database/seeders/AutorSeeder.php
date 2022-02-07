@@ -15,15 +15,7 @@ class AutorSeeder extends Seeder
     public function run()
     {
         Autor::create([
-            'nombre_autor' => 'Ricardo Garcia' 
-        ]);
-
-        Autor::create([
             'nombre_autor' => 'Gabriel Garcia Marquez' 
-        ]);
-
-        Autor::create([
-            'nombre_autor' => 'Pepe' 
         ]);
     }
 }
